@@ -6,6 +6,9 @@
   <threadsafe>true</threadsafe>
 
   <public-root>site</public-root>
+  <static-files>
+	  <include path="/site/**" expiration="30s" />
+  </static-files>
 
   <system-properties>
     <property name="java.util.logging.config.file" value="WEB-INF/logging.properties" />
